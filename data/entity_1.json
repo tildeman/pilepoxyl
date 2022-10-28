@@ -1,0 +1,21 @@
+{
+	"embeds": [
+		{
+			"title": "Entity generator (beta) (more like early alpha)",
+			"fields": [
+				{
+					"name": "Syntax",
+					"value": "/entity"
+				},
+				{
+					"name": "Description",
+					"value": "Generate an MCBE entity"
+				},
+				{
+					"name": "Parameters",
+					"value": "`generate` - What to generate for the entity\n`identifier` - The identifier of the entity in %s:%s format\n`texture_file` - Entity texture file in PNG format\n`model_file` - Entity model file in JSON format\n`is_spawnable` - Can the entity be spawned using spawn eggs?\n`is_experimental` - Is the entity experimental?\n`basic_beh` - Pick \"True\" or dire things may happen\n`spawn_egg_overlay` - The overlay color of the spawn egg in hex format\n`spawn_egg_base` - The base color of the spawn egg in hex format\n`material` - The entity material"
+				}
+			]
+		}
+	]
+}

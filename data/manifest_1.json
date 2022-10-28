@@ -1,0 +1,21 @@
+{
+	"embeds": [
+		{
+			"title": "Manifest generator (independent)",
+			"fields": [
+				{
+					"name": "Syntax",
+					"value": "/manifest independent"
+				},
+				{
+					"name": "Description",
+					"value": "Generate an independent manifest for a script, behavior, resource or skin pack"
+				},
+				{
+					"name": "Parameters",
+					"value": "`pack_type` - Manifest pack type to generate\n`pack_name` - The name of the pack\n`min_engine_version`: Minimum engine version (Bedrock edition)\n`pack_icon` - The pack icon to be included. Only accepts PNG files\n`pack_use_metadata` - Also add a metadata field\n`pack_authors` - Author names separated by commas. Only included if pack_use_metadata is enabled\n`pack_author_url` - Author website. Only included if pack_use_metadata is enabled\n`pack_use_gametest` - Also enable the GameTest module\n`pack_gametest_entry_file` - Path to the GameTest entry file. Only included if pack_use_gametest is enabled"
+				}
+			]
+		}
+	]
+}

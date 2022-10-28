@@ -1,0 +1,6 @@
+{
+	"name": "help",
+	"type": 1,
+	"description": "Display a list of available tools",
+	"options": []
+}

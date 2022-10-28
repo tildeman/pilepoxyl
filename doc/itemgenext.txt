@@ -1,0 +1,22 @@
+The following format versions are supported:
+
+	(+) 1.16.100
+
+When generating the item Atlas, an attachment image is required
+
+The following properties require follow-up details:
+
+	(+) Use animation
+	(+) Creative category
+	(+) Is food
+	(+) Wearable
+	(+) Cooldown
+	(+) Place Block
+	(+) Place Entity
+	(+) Enchantable
+	(+) Can shoot
+		(*) Add ammo requires one more followup
+	(+) Projectile
+	(+) Dye powder
+	(+) Throwable
+	(+) Record

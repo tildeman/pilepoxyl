@@ -1,0 +1,8 @@
+ __________________
+/                  \
+| Well, well, well |
+\__________________/
+
+If you're seeing this file, either that
+(1) You haven't run runpp yet. Look around the sources and build the application when you're ready.
+(2) runpp forgot to remove the file. If config.json is not empty, remove this file immediately.

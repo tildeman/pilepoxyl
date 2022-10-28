@@ -1,0 +1,18 @@
+{
+	"name": "obfuscate",
+	"type": 1,
+	"description": "Obfuscate a JSON file",
+	"options": [
+		{
+			"type": 11,
+			"name": "input_json",
+			"description": "The JSON file to be obfuscated",
+			"required": true
+		},
+		{
+			"type": 5,
+			"name": "do_minify",
+			"description": "Also minify the result"
+		}
+	]
+}

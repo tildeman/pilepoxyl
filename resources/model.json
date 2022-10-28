@@ -1,0 +1,16 @@
+{
+	"minecraft:geolocation_id": [
+		42.49,
+		78.39
+	],
+	"minecraft:geolocation_city": "Karakol",
+	"minecraft:geo_country_code": "kg",
+	"minecraft:geometry": [
+		{
+			"name": "ash_you_almost_tricked_me_model_files_dont_contain_geolocation_id",
+			"description": {
+				"identifier": "custom:model"
+			}
+		}
+	]
+}

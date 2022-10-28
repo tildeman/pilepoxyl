@@ -1,0 +1,13 @@
+The entity Identifier must be valid - otherwise no file should be produced
+
+The following properties require follow-up details:
+
+	(+) Entity can be spawned using spawn eggs
+		(*) This only shows up when Generate is set to Both alongside the checkbox
+	(+) Generate with basic behaviors
+		(*) This option inhibits follow-up behavior details
+		(*) Custom behaviors are intended to be requested if this option is unchecked, but no implementation exists to do so
+
+Entities can only be generated with basic behaviors - no custom behaviors yet
+
+The generator always produces a file (to be sent through multipart, of course)

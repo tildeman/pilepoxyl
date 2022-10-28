@@ -1,0 +1,13 @@
+{
+	"embeds": [
+		{
+			"title": "Item generator (1.16.100)",
+			"fields": [
+				{
+					"name": "Parameters (finish)",
+					"value": "`step2_file` - The step2 file obtained from `/item checkpoint`\n`mining_speed` - Mining speed, integer input\n`liquid_clipped` - Item clips in liquid?\n`mirrored_art` - The item art is mirrored?\n`projectile` - Projectile item component\n`projectile_entity` - The entity to be fired, requires `projectile`\n`projectile_min_crit_power` - Projectile minimum critical power, requires `projectile`\n`dye_powder` - The color of the dye item\n`throwable` - Throwable item component\n`throwable_do_swing_animation` - Whether the item should use the swing animation when thrown, requires `throwable`\n`throwable_max_draw_duration` - Maximum draw duration for the throwable item, decimal input\n`throwable_scale_pow_by_draw_dura` - Whether or not to scale power by draw duration, requires `throwable`\n`knockback_resistance` - Knockback resistance, integer input\n`fuel_duration` - Cook duration for fuel items, decimal input\n`record` - Record item component"
+				}
+			]
+		}
+	]
+}

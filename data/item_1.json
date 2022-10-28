@@ -1,0 +1,21 @@
+{
+	"embeds": [
+		{
+			"title": "Item generator (1.16.100)",
+			"fields": [
+				{
+					"name": "Syntax",
+					"value": "/item (start|checkpoint|finish)"
+				},
+				{
+					"name": "Description",
+					"value": "Generate an MCBE item"
+				},
+				{
+					"name": "Parameters (start)",
+					"value": "`format_version` - Always \"1.16.100\"\n`identifier` - The identifier of the item in %s:%s format\n`category` - The category of the item\n`is_experimental` - Is the item experimental?\n`texture_path` - Where the pack icon is placed in the output\n`generate_item_atlas` - Generate item atlas as well\n`display_name` - The name displayed on-screen\n`max_stack_size` - The maximum stack size, integer input\n`is_enchanted` - Should the item be displayed with foil?\n`use_animation` - The animation used with the item\n`use_duration` - Duration of item usage, decimal input\n`stacked_by_data` - Is the item stacked by data?\n`hand_equipped` - Is the item hand equipped?\n`can_destroy_in_creative` - Can the item be destroyed in creative?\n`creative_category` - The creative category of the item\n`is_food` - Is the item food?\n`food_nutrition` - Nutrition, decimal input, requires `is_food`\n`food_saturation_modifier` - Saturation modifier, requires `is_food`"
+				}
+			]
+		}
+	]
+}

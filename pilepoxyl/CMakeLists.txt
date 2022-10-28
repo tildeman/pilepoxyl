@@ -1,0 +1,6 @@
+add_library(pilepoxyl STATIC httpapi.cpp gateway.cpp firstrun.cpp)
+target_link_libraries(pilepoxyl PUBLIC handle_json)
+target_link_libraries(pilepoxyl PUBLIC handle_files)
+target_link_libraries(pilepoxyl PUBLIC generate_libs)
+target_link_libraries(pilepoxyl PUBLIC curl)
+target_link_libraries(pilepoxyl PUBLIC websockets)

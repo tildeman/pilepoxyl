@@ -1,0 +1,13 @@
+{
+	"embeds": [
+		{
+			"title": "Item generator (1.16.100)",
+			"fields": [
+				{
+					"name": "Parameters (checkpoint)",
+					"value": "`enchantable` - Determines the enchantability of the item\n`enchantable_slot` - The enchantment slot\n`enchantable_value` - The enchantment level, integer input\n`can_shoot` - Shooter item component\n`shooter_max_draw_duration` - How long the item can be drawn before released automatically, decimal input, requires `can_shoot`\n`charge_on_draw` - Determines if the item is charged when drawn, requires `can_shoot`\n`shooter_scale_power_on_duration` - Scale the power by draw duration? Requires `can_shoot`\n`shooter_use_ammo` - Use ammunition? Requires `can_shoot`\n`shooter_ammo_search_in_inventory` - Search ammunition in inventory, requires `shooter_use_ammo`\n`shooter_ammo_item_to_use` - The entity used as ammunition, requires `shooter_use_ammo`\n`shooter_ammo_use_offhand` - Use ammunition in offhand? Requires `shooter_use_ammo`\n`shooter_ammo_use_in_creative` - Use ammunition in creative mode? Requires `shooter_use_ammo`\n`fertilizer_duration` - Fertilizer duration\n`ignore_permission` - Ignores permission"
+				}
+			]
+		}
+	]
+}

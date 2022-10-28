@@ -1,0 +1,17 @@
+{
+	"embeds": [
+		{
+			"title": "Item generator (1.16.100)",
+			"fields": [
+				{
+					"name": "Parameters (start)",
+					"value": "`food_can_always_eat` - Can this food item always be eaten? Requires `is_food`\n`food_using_converts_to` - What the food item converts to when used\n`is_explodable` - Is the item explodable?\n`allow_in_offhand` - Controls if the item can be equipped in offhand\n`wearable_slot` - If wearable, defines which armor slot the item belongs to\n`armor_protection` - Armor protection level, integer input\n`cooldown` - Does the item require a usage cooldown?"
+				},
+				{
+					"name": "Parameters (checkpoint)",
+					"value": "`step1_file` - The step1 file obtained from `/item start`\n`cooldown_category` - The category of cooldown\n`cooldown_duration` - Duration of cooldown, decimal input\n`damage` - Attack damage\n`place_block` - Block placer item component\n`block_to_place` - Placement block name, requires `place_block`\n`use_block_description` - Is the block description used? Requires `place_block`\n`place_entity` - Entity placer item component\n`entity_to_place` - The entity to place, requires `place_entity`\n`entity_use_on` - Comma-separated block descriptors that contain blocks that this item can be used on, requires `place_entity`\n`entity_dispense_on` - Comma-separated block descriptors that contain blocks that this item can be dispensed on, requires `place_entity`"
+				}
+			]
+		}
+	]
+}

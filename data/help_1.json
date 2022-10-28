@@ -1,0 +1,21 @@
+{
+	"embeds": [
+		{
+			"title": "Help (command)",
+			"fields": [
+				{
+					"name": "Syntax",
+					"value": "/help"
+				},
+				{
+					"name": "Description",
+					"value": "Display help information"
+				},
+				{
+					"name": "Parameters",
+					"value": "none"
+				}
+			]
+		}
+	]
+}

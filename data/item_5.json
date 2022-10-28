@@ -1,0 +1,13 @@
+{
+	"embeds": [
+		{
+			"title": "Item generator (1.16.100)",
+			"fields": [
+				{
+					"name": "Parameters (finish)",
+					"value": "`record_duration` - Record duration, integer input, requires `record`\n`record_comparator_signal` - Signal strength for comparators, integer input, requires `record`\n`item_icon` - The item icon to be included. Only accepts PNG files"
+				}
+			]
+		}
+	]
+}

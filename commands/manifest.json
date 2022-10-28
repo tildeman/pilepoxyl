@@ -1,0 +1,228 @@
+{
+	"name": "manifest",
+	"description": "Generate a manifest file",
+	"options": [
+		{
+			"name": "independent",
+			"description": "Generate an independent manifest for a script, behavior, resource or skin pack",
+			"type": 1,
+			"options": [
+				{
+					"type": 3,
+					"name": "pack_type",
+					"description": "Manifest pack type to generate",
+					"required": true,
+					"choices": [
+						{
+							"name": "Behavior pack",
+							"value": "data"
+						},
+						{
+							"name": "Resource pack",
+							"value": "resources"
+						},
+						{
+							"name": "Skin pack",
+							"value": "skin_pack"
+						},
+						{
+							"name": "Scripts",
+							"value": "scripts"
+						}
+					]
+				},
+				{
+					"type": 3,
+					"name": "pack_name",
+					"description": "The name of the pack"
+				},
+				{
+					"type": 3,
+					"name": "pack_description",
+					"description": "The description of the pack"
+				},
+				{
+					"type": 3,
+					"name": "pack_version",
+					"description": "Minimum engine version (Bedrock edition)",
+					"choices": [
+						{
+							"name": "1.17.0",
+							"value": "1.17.0"
+						},
+						{
+							"name": "1.16.0",
+							"value": "1.16.0"
+						},
+						{
+							"name": "1.14.0",
+							"value": "1.14.0"
+						},
+						{
+							"name": "1.13.0",
+							"value": "1.13.0"
+						}
+					]
+				},
+				{
+					"type": 11,
+					"name": "pack_icon",
+					"description": "The pack icon to be included. Only accepts PNG files"
+				},
+				{
+					"type": 5,
+					"name": "pack_use_metadata",
+					"description": "Also add a metadata field"
+				},
+				{
+					"type": 3,
+					"name": "pack_authors",
+					"description": "Author names separated by commas. Only included if pack_use_metadata is enabled"
+				},
+				{
+					"type": 3,
+					"name": "pack_author_url",
+					"description": "Author website. Only included if pack_use_metadata is enabled"
+				},
+				{
+					"type": 5,
+					"name": "pack_use_gametest",
+					"description": "Also enable the GameTest module"
+				},
+				{
+					"type": 3,
+					"name": "pack_gametest_entry_file",
+					"description": "Path to the GameTest entry file. Only included if pack_use_gametest is enabled"
+				}
+			]
+		},
+		{
+			"name": "dependent",
+			"type": 1,
+			"description": "Generate a combined behavior and resource manifest pack with extra options",
+			"options": [
+				{
+					"type": 3,
+					"name": "bp_name",
+					"description": "The name of the behavior pack"
+				},
+				{
+					"type": 3,
+					"name": "bp_description",
+					"description": "The description of the behavior pack"
+				},
+				{
+					"type": 3,
+					"name": "bp_version",
+					"description": "Minimum engine version of the behavior pack",
+					"choices": [
+						{
+							"name": "1.17.0",
+							"value": "1.17.0"
+						},
+						{
+							"name": "1.16.0",
+							"value": "1.16.0"
+						},
+						{
+							"name": "1.14.0",
+							"value": "1.14.0"
+						},
+						{
+							"name": "1.13.0",
+							"value": "1.13.0"
+						}
+					]
+				},
+				{
+					"type": 5,
+					"name": "bp_use_metadata",
+					"description": "Also add a metadata field for the behavior pack"
+				},
+				{
+					"type": 3,
+					"name": "bp_authors",
+					"description": "Author names of the behavior pack separated by commas. Only included if bp_use_metadata is enabled"
+				},
+				{
+					"type": 3,
+					"name": "bp_author_url",
+					"description": "Author website of the behavior pack. Only included if bp_use_metadata is enabled"
+				},
+				{
+					"type": 5,
+					"name": "bp_use_gametest",
+					"description": "Also enable the GameTest module."
+				},
+				{
+					"type": 5,
+					"name": "bp_use_scripts",
+					"description": "Also enable client script"
+				},
+				{
+					"type": 3,
+					"name": "bp_gametest_entry_file",
+					"description": "Path to the GameTest entry file. Only included if bp_use_gametest is enabled"
+				},
+				{
+					"type": 3,
+					"name": "rp_name",
+					"description": "The name of the resource pack"
+				},
+				{
+					"type": 3,
+					"name": "rp_description",
+					"description": "The description of the resource pack"
+				},
+				{
+					"type": 3,
+					"name": "rp_version",
+					"description": "Minimum engine version of the resource pack",
+					"choices": [
+						{
+							"name": "1.17.0",
+							"value": "1.17.0"
+						},
+						{
+							"name": "1.16.0",
+							"value": "1.16.0"
+						},
+						{
+							"name": "1.14.0",
+							"value": "1.14.0"
+						},
+						{
+							"name": "1.13.0",
+							"value": "1.13.0"
+						}
+					]
+				},
+				{
+					"type": 5,
+					"name": "rp_use_metadata",
+					"description": "Also add a metadata field for the resource pack"
+				},
+				{
+					"type": 3,
+					"name": "rp_authors",
+					"description": "Author names of the resource pack separated by commas. Only included if rp_use_metadata is enabled"
+				},
+				{
+					"type": 3,
+					"name": "rp_author_url",
+					"description": "Author website of the resource pack. Only included if rp_use_metadata is enabled"
+				},
+				{
+					"type": 5,
+					"name": "rp_use_ui",
+					"description": "Also enable UI capabilities"
+				},
+				{
+					"type": 11,
+					"name": "pack_icon",
+					"description": "The pack icon to be included. Only accepts PNG files"
+				}
+			]
+		}
+	]
+}

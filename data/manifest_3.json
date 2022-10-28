@@ -1,0 +1,17 @@
+{
+	"embeds": [
+		{
+			"title": "Manifest generator (dependent)",
+			"fields": [
+				{
+					"name": "Parameters (resource)",
+					"value": "`rp_name` - The name of the resource pack\n`rp_description` - The description of the resource pack\n`rp_version` - Minimum engine version of the resource pack\n`rp_use_metadata` - Also add a metadata field for the resource pack\n`rp_authors` - Author names of the resource pack separated by commas. Only included if rp_use_metadata is enabled\n`rp_author_url` - Author website of the resource pack. Only included if rp_use_metadata is enabled\n`rp_use_ui` - Also enable UI capabilities"
+				},
+				{
+					"name": "Parameters (extras)",
+					"value": "`pack_icon` - The pack icon to be included. Only accepts PNG files"
+				}
+			]
+		}
+	]
+}

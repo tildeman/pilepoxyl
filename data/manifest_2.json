@@ -1,0 +1,21 @@
+{
+	"embeds": [
+		{
+			"title": "Manifest generator (dependent)",
+			"fields": [
+				{
+					"name": "Syntax",
+					"value": "/manifest dependent"
+				},
+				{
+					"name": "Description",
+					"value": "Generate a combined behavior and resource manifest pack with extra options"
+				},
+				{
+					"name": "Parameters (behavior)",
+					"value": "`bp_name` - The name of the behavior pack\n`bp_description` - The description of the behavior pack\n`bp_version` - Minimum engine version of the behavior pack\n`bp_use_metadata` - Also add a metadata field for the behavior pack\n`bp_authors` - Author names of the behavior pack separated by commas. Only included if bp_use_metadata is enabled\n`bp_author_url` - Author website of the behavior pack. Only included if bp_use_metadata is enabled\n`bp_use_gametest` - Also enable the GameTest module.\n`bp_gametest_entry_file` - Path to the GameTest entry file. Only included if bp_use_gametest is enabled\n`bp_use_scripts` - Also enable client script"
+				}
+			]
+		}
+	]
+}

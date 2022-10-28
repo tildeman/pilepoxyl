@@ -1,0 +1,119 @@
+{
+	"name": "entity",
+	"type": 1,
+	"description": "Generate an MCBE entity (Beta) (more like early Alpha)",
+	"options": [
+		{
+			"type": 3,
+			"name": "generate",
+			"description": "What to generate for the entity",
+			"required": true,
+			"choices": [
+				{
+					"name": "Both (Behavior & Resource)",
+					"value": "both"
+				},
+				{
+					"name": "Only Resource",
+					"value": "res"
+				},
+				{
+					"name": "Only Behavior",
+					"value": "beh"
+				}
+			]
+		},
+		{
+			"type": 3,
+			"name": "identifier",
+			"description": "The identifier of the entity in %s:%s format"
+		},
+		{
+			"type": 11,
+			"name": "texture_file",
+			"description": "Entity texture file in PNG format"
+		},
+		{
+			"type": 11,
+			"name": "model_file",
+			"description": "Entity model file in JSON format"
+		},
+		{
+			"type": 5,
+			"name": "is_spawnable",
+			"description": "Can the entity be spawned using spawn eggs?"
+		},
+		{
+			"type": 5,
+			"name": "is_experimental",
+			"description": "Is the entity experimental?"
+		},
+		{
+			"type": 5,
+			"name": "is_summonable",
+			"description": "Can the entity be summoned using commands?"
+		},
+		{
+			"type": 5,
+			"name": "basic_beh",
+			"description": "Pick \"True\" or dire things may happen"
+		},
+		{
+			"type": 3,
+			"name": "spawn_egg_overlay",
+			"description": "The overlay color of the spawn egg in hex format"
+		},
+		{
+			"type": 3,
+			"name": "spawn_egg_base",
+			"description": "The base color of the spawn egg in hex format"
+		},
+		{
+			"type": 3,
+			"name": "material",
+			"description": "The entity material",
+			"choices": [
+				{
+					"name": "Alpha test",
+					"value": "entity_alphatest"
+				},
+				{
+					"name": "Alpha blend",
+					"value": "entity_alphablend"
+				},
+				{
+					"name": "Slime (outer)",
+					"value": "slime_outer"
+				},
+				{
+					"name": "Static",
+					"value": "entity_static"
+				},
+				{
+					"name": "Alpha block",
+					"value": "alpha_block"
+				},
+				{
+					"name": "Spider",
+					"value": "spider"
+				},
+				{
+					"name": "Enderman",
+					"value": "enderman"
+				},
+				{
+					"name": "NPC",
+					"value": "npc"
+				},
+				{
+					"name": "Phantom",
+					"value": "phantom"
+				},
+				{
+					"name": "Emissive",
+					"value": "emissive"
+				}
+			]
+		}
+	]
+}

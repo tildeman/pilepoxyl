@@ -1,0 +1,575 @@
+{
+	"name": "item",
+	"description": "Generate an MCBE item",
+	"options": [
+		{
+			"type": 1,
+			"name": "start",
+			"description": "Start here",
+			"options": [
+				{
+					"type": 3,
+					"name": "format_version",
+					"choices": [
+						{
+							"name": "1.16.100",
+							"value": "1.16.100"
+						}
+					],
+					"description": "N/A"
+				},
+				{
+					"type": 3,
+					"name": "identifier",
+					"description": "N/A"
+				},
+				{
+					"type": 3,
+					"name": "category",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "is_experimental",
+					"description": "N/A"
+				},
+				{
+					"type": 3,
+					"name": "texture_path",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "generate_item_atlas",
+					"description": "N/A"
+				},
+				{
+					"type": 3,
+					"name": "display_name",
+					"description": "N/A"
+				},
+				{
+					"type": 4,
+					"name": "max_stack_size",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "is_enchanted",
+					"description": "N/A"
+				},
+				{
+					"type": 3,
+					"name": "use_animation",
+					"choices": [
+						{
+							"name": "Bow",
+							"value": "bow"
+						},
+						{
+							"name": "Camera",
+							"value": "camera"
+						},
+						{
+							"name": "Eat",
+							"value": "eat"
+						},
+						{
+							"name": "Drink",
+							"value": "drink"
+						}
+					],
+					"description": "N/A"
+				},
+				{
+					"type": 10,
+					"name": "use_duration",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "stacked_by_data",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "hand_equipped",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "can_destroy_in_creative",
+					"description": "N/A"
+				},
+				{
+					"type": 3,
+					"name": "creative_category",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "is_food",
+					"description": "N/A"
+				},
+				{
+					"type": 10,
+					"name": "food_nutrition",
+					"description": "N/A"
+				},
+				{
+					"type": 3,
+					"name": "food_saturation_modifier",
+					"choices": [
+						{
+							"name": "Low",
+							"value": "low"
+						},
+						{
+							"name": "Normal",
+							"value": "normal"
+						},
+						{
+							"name": "Good",
+							"value": "good"
+						},
+						{
+							"name": "High",
+							"value": "high"
+						},
+						{
+							"name": "Supernatural",
+							"value": "supernatural"
+						}
+					],
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "food_can_always_eat",
+					"description": "N/A"
+				},
+				{
+					"type": 3,
+					"name": "food_using_converts_to",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "is_explodable",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "allow_in_offhand",
+					"description": "N/A"
+				},
+				{
+					"type": 3,
+					"name": "wearable_slot",
+					"choices": [
+						{
+							"name": "Helmet",
+							"value": "head"
+						},
+						{
+							"name": "Chestplate",
+							"value": "chest"
+						},
+						{
+							"name": "Leggings",
+							"value": "legs"
+						},
+						{
+							"name": "Boots",
+							"value": "feet"
+						}
+					],
+					"description": "N/A"
+				},
+				{
+					"type": 4,
+					"name": "armor_protection",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "cooldown",
+					"description": "N/A"
+				}
+			]
+		},
+		{
+			"type": 1,
+			"name": "checkpoint",
+			"description": "You're on to the second step. Don't lose that step1 file!",
+			"options": [
+				{
+					"type": 11,
+					"name": "step1_file",
+					"description": "The step1 file obtained from /item start",
+					"required": true
+				},
+				{
+					"type": 3,
+					"name": "cooldown_category",
+					"description": "N/A"
+				},
+				{
+					"type": 10,
+					"name": "cooldown_duration",
+					"description": "N/A"
+				},
+				{
+					"type": 4,
+					"name": "damage",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "place_block",
+					"description": "N/A"
+				},
+				{
+					"type": 3,
+					"name": "block_to_place",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "use_block_description",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "place_entity",
+					"description": "N/A"
+				},
+				{
+					"type": 3,
+					"name": "entity_to_place",
+					"description": "N/A"
+				},
+				{
+					"type": 3,
+					"name": "entity_use_on",
+					"description": "N/A"
+				},
+				{
+					"type": 3,
+					"name": "entity_dispense_on",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "enchantable",
+					"description": "N/A"
+				},
+				{
+					"type": 3,
+					"name": "enchantable_slot",
+					"choices": [
+						{
+							"name": "Bow",
+							"value": "bow"
+						},
+						{
+							"name": "Head",
+							"value": "armor_head"
+						},
+						{
+							"name": "Chestplate",
+							"value": "armor_torso"
+						},
+						{
+							"name": "Leggings",
+							"value": "armor_legs"
+						},
+						{
+							"name": "Boots",
+							"value": "armor_feet"
+						},
+						{
+							"name": "Hoe",
+							"value": "hoe"
+						},
+						{
+							"name": "Axe",
+							"value": "axe"
+						},
+						{
+							"name": "Pickaxe",
+							"value": "pickaxe"
+						},
+						{
+							"name": "Shovel",
+							"value": "shovel"
+						},
+						{
+							"name": "Sword",
+							"value": "sword"
+						},
+						{
+							"name": "Elytra",
+							"value": "elytra"
+						},
+						{
+							"name": "Fishing rod",
+							"value": "fishing_rod"
+						},
+						{
+							"name": "Helmet",
+							"value": "head"
+						},
+						{
+							"name": "Flint & Steel",
+							"value": "flintsteel"
+						},
+						{
+							"name": "Shears",
+							"value": "shears"
+						},
+						{
+							"name": "Cosmetic head",
+							"value": "cosmetic_head"
+						}
+					],
+					"description": "N/A"
+				},
+				{
+					"type": 4,
+					"name": "enchantable_value",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "can_shoot",
+					"description": "N/A"
+				},
+				{
+					"type": 10,
+					"name": "shooter_max_draw_duration",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "shooter_charge_on_draw",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "shooter_scale_power_on_duration",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "shooter_use_ammo",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "shooter_ammo_search_in_inventory",
+					"description": "N/A"
+				},
+				{
+					"type": 3,
+					"name": "shooter_ammo_item_to_use",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "shooter_ammo_use_offhand",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "shooter_ammo_use_in_creative",
+					"description": "N/A"
+				},
+				{
+					"type": 4,
+					"name": "fertilizer_duration",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "ignore_permission",
+					"description": "N/A"
+				}
+			]
+		},
+		{
+			"type": 1,
+			"name": "finish",
+			"description": "You're almost done! Just don't tell me you lost the step2 file",
+			"options": [
+				{
+					"type": 11,
+					"name": "step2_file",
+					"description": "The step2 file obtained from /item checkpoint",
+					"required": true
+				},
+				{
+					"type": 4,
+					"name": "mining_speed",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "liquid_clipped",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "should_despawn",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "mirrored_art",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "projectile",
+					"description": "N/A"
+				},
+				{
+					"type": 3,
+					"name": "projectile_entity",
+					"description": "N/A"
+				},
+				{
+					"type": 10,
+					"name": "projectile_min_crit_power",
+					"description": "N/A"
+				},
+				{
+					"type": 3,
+					"name": "dye_powder",
+					"choices": [
+						{
+							"name": "Silver",
+							"value": "silver"
+						},
+						{
+							"name": "White",
+							"value": "white"
+						},
+						{
+							"name": "Purple",
+							"value": "purple"
+						},
+						{
+							"name": "Blue",
+							"value": "blue"
+						},
+						{
+							"name": "Green",
+							"value": "green"
+						},
+						{
+							"name": "Magenta",
+							"value": "Magenta"
+						},
+						{
+							"name": "Black",
+							"value": "black"
+						},
+						{
+							"name": "Pink",
+							"value": "pink"
+						},
+						{
+							"name": "Cyan",
+							"value": "cyan"
+						},
+						{
+							"name": "Lime",
+							"value": "lime"
+						},
+						{
+							"name": "Yellow",
+							"value": "yellow"
+						},
+						{
+							"name": "Brown",
+							"value": "brown"
+						},
+						{
+							"name": "Light blue",
+							"value": "lightblue"
+						},
+						{
+							"name": "Orange",
+							"value": "orange"
+						},
+						{
+							"name": "Gray",
+							"value": "gray"
+						},
+						{
+							"name": "Red",
+							"value": "red"
+						}
+					],
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "throwable",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "throwable_do_swing_animation",
+					"description": "N/A"
+				},
+				{
+					"type": 10,
+					"name": "throwable_max_draw_duration",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "throwable_scale_pow_by_draw_dura",
+					"description": "N/A"
+				},
+				{
+					"type": 10,
+					"name": "knockback_resistance",
+					"description": "N/A"
+				},
+				{
+					"type": 10,
+					"name": "fuel_duration",
+					"description": "N/A"
+				},
+				{
+					"type": 5,
+					"name": "record",
+					"description": "N/A"
+				},
+				{
+					"type": 3,
+					"name": "record_sound_event",
+					"description": "N/A"
+				},
+				{
+					"type": 4,
+					"name": "record_duration",
+					"description": "N/A"
+				},
+				{
+					"type": 4,
+					"name": "record_comparator_signal",
+					"description": "N/A"
+				},
+				{
+					"type": 11,
+					"name": "item_icon",
+					"description": "N/A"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"embeds": [
+		{
+			"title": "JSON obfuscator",
+			"fields": [
+				{
+					"name": "Syntax",
+					"value": "/obfuscate"
+				},
+				{
+					"name": "Description",
+					"value": "Obfuscate a JSON file"
+				},
+				{
+					"name": "Parameters",
+					"value": "`input_json` - The JSON file to be obfuscated\n`do_minify` - Also minify the result"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"obfuscator_splash": "In comes the file, out comes gibberish",
+	"obfuscator_invfex": "Please upload JSON files **only**",
+	"obfuscator_noutf8": "Your file is not in valid UTF-8 format. Don't trust this generated JSON file.",
+	"manifest_splash": "Happy coding!",
+	"manifest_ivpico": "Do you think you can upload whatever and it'd still be a pack icon?",
+	"manifest_nonext": "What the hell is wrong with my commands?",
+	"item_step1_snotif": "Use this JSON file to proceed to the next step.",
+	"item_step2_snotif": "Use this JSON file to proceed to the final step.",
+	"item_step3_splash": "A great new item is about to appear! (in your Minecraft game)",
+	"item_step3_imgerr": "You can't just put whatever as an item icon",
+	"item_stepg_ivlfmt": "Step files can **only** be in JSON.",
+	"item_stepg_nonext": "I don't know what step to do!",
+	"entity_textr_ivfmt": "Texture files can only be in PNG format",
+	"entity_model_ivfmt": "Model files can only be in JSON format",
+	"entity_invalid_idr": "You sent an invalid identifier!",
+	"entity_bb_disabled": "You just won't read the description, will you?",
+	"missing_command": "Nice command. Unfortunately it is not valid."
+}
