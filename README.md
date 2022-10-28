@@ -1,4 +1,4 @@
-# Pilepoxyl
+# PilePoxyl
 The ultimate MCBE creator toolkit from [PixelPoly](https://tools.pixelpoly.co), Condensed into a Discord application.
 ## Features
 * Near-perfect feature parity with the reference website
