@@ -264,23 +264,16 @@ void gateway::connect_and_receive_events(){
 void gateway::determine_what_to_do(json_value json_msg){
 	enum opcodes received_opcode=(enum opcodes) json_msg.val_object["op"].val_int;
 	lwsl_user("Received response with opcode %d",received_opcode);
-	file write_message;
 	switch (received_opcode){
 		case GW_DISPATCH: // An event is received, do something I guess
 			lwsl_user("Payload type: %s",json_msg.val_object["t"].val_string.c_str());
 			if (json_msg.val_object["t"].val_string=="READY"){
-				write_message=file("ready_message.json",json_msg.get_repr());
 				this->reconnect_url=json_msg.val_object["d"].val_object["resume_gateway_url"].val_string.substr(6);
 				this->sessid=json_msg.val_object["d"].val_object["session_id"].val_string;
 			}
 			else if (json_msg.val_object["t"].val_string=="INTERACTION_CREATE"){
 				this->http_handler.respond_interaction(json_msg.val_object["d"]);
-				write_message=file("current_interaction.json",json_msg.get_repr());
 			}
-			else{
-				write_message=file("current_payload.json",json_msg.get_repr());
-			}
-			write_message.write_file();
 			this->event_order=json_msg.val_object["s"].val_int;
 			break;
 		case GW_HRTBTSND: // Additional heartbeat is requested
