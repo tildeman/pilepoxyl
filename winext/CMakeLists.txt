@@ -1,7 +1,5 @@
 # Bundled libraries for Windows
 add_library(websockets SHARED IMPORTED GLOBAL)
-add_library(libcrypto SHARED IMPORTED GLOBAL)
-add_library(libssl SHARED IMPORTED GLOBAL)
 add_library(curl SHARED IMPORTED GLOBAL)
 
 set_target_properties(websockets PROPERTIES IMPORTED_LOCATION "${CMAKE_CURRENT_SOURCE_DIR}\\prebuilt\\websockets.dll")

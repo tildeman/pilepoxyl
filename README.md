@@ -1,5 +1,5 @@
 # PilePoxyl
-The ultimate MCBE creator toolkit from [PixelPoly](https://tools.pixelpoly.co), Condensed into a Discord application.
+The ultimate MCBE creator toolkit from [PixelPoly](https://tools.pixelpoly.co), condensed into a Discord application.
 ## Features
 * Near-perfect feature parity with the reference website
 * Useful parameter descriptions from /help
@@ -7,6 +7,7 @@ The ultimate MCBE creator toolkit from [PixelPoly](https://tools.pixelpoly.co), 
 * Super-easy setup interface
 * Minimal dependencies
 ## Some hurdles yet to be overcome
+* Detect `config/config.json` instead of a separate `FIRSTRUN` file to determine first run
 * C++ functions and class methods should take in reference arguments
 * Limit code-copying and redundancy at `restapi::respond_interaction`
 * Remove the need for a keyfile for OpenSSL (libwebsockets)
@@ -14,7 +15,7 @@ The ultimate MCBE creator toolkit from [PixelPoly](https://tools.pixelpoly.co), 
 * UTF-16 handling for filenames on Windows
 ## How to build
 ### Linux
-By far the easiest OS to work with. Install CURL, libwebsockets and minizip (from zlib) from your package manager, and you're ready to go!
+By far the easiest OS to work with. Install CURL, libwebsockets from your package manager, and you're ready to go!
 ### Windows
 Windows builds are failing somehow, but that winext folder is there so it is intended to be supported 😅
 ### BSD/Darwin (macOS)
@@ -25,4 +26,3 @@ Support for such system is nonexistent. Meanwhile install brew and hope that the
 ## External dependencies
 * CURL (HTTP handling with an easy-to-use interface)
 * libwebsockets (WebSocket handling with a reasonable but hard-to-use interface)
-* zlib + minizip (lightweight zipfile and deflate handling)

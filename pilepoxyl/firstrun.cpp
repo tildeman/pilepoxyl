@@ -69,7 +69,7 @@ void firstrun::fetch_id(){
 }
 
 void firstrun::install_commands(){
-	std::vector available={"obfuscator","manifest","item","entity","help"};
+	std::vector<std::string> available={"obfuscator","manifest","item","entity","help"};
 	for (std::string a:available){
 		this->install_one_command(a);
 	}

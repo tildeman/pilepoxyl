@@ -12,7 +12,7 @@
 // This should work with most POSIX systems + win32
 // I will only support Linux for now, though
 #ifdef _WIN32
-#include <synchapi.h>
+#include <windows.h>
 #else
 #include <time.h>
 #endif

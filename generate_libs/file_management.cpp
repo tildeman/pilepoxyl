@@ -82,14 +82,12 @@ void file::read_file(std::string filename,bool is_binary){
 		f.read((char*)&(this->binary_contents)[0],length);
 	}
 	else{
-		std::fstream f(filename,std::ios::in|std::ios::ate);
+		std::ifstream f(filename);
 		this->filetype=1;
 		this->filename=truncate_slashes(filename);
-		f.seekg(0,std::ios::end);
-		std::streampos length=f.tellg();
-		f.seekg(0,std::ios::beg);
-		this->text_contents=std::string(length,'\0');
-		f.read(&(this->text_contents)[0],length);
+		std::ostringstream b;
+		b << f.rdbuf();
+		this->text_contents = b.str();
 	}
 }
 void file::write_file(){
