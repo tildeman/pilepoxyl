@@ -580,22 +580,15 @@ void restapi::respond_interaction(json_value payload){
 	curl_easy_setopt(handle,CURLOPT_HTTPHEADER,headers);
 	std::string data=data_json.get_repr();
 
-	file tmpdtf("callback.json",data);
-	tmpdtf.write_file();
-
 	curl_easy_setopt(handle,CURLOPT_POSTFIELDSIZE,data.length());
 	curl_easy_setopt(handle,CURLOPT_POSTFIELDS,data.c_str());
-	// curl_response cr{0};
-	// curl_easy_setopt(handle,CURLOPT_WRITEDATA,(void*)&cr);
+	
 	curl_easy_setopt(handle,CURLOPT_WRITEFUNCTION,restapi::dummy_write_callback);
 	CURLcode value = curl_easy_perform(handle);
 	curl_easy_cleanup(handle);
 	if (value!=CURLE_OK){
 		lwsl_err(curl_easy_strerror(value));
 	}
-	// file errordtf("error.json",cr.data);
-	// errordtf.write_file();
-	// lwsl_user(cr.data);
 }
 
 void restapi::upload_data_df(std::string url,std::string filename,std::string filedata,std::string msgcont){
